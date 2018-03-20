@@ -6,3 +6,9 @@ from django.http import HttpResponse
 def index(request):
     template = 'index.html'
     return render(request, template)
+
+
+def asset(request):
+    template = 'test.html'
+    return render(request, template)
+
