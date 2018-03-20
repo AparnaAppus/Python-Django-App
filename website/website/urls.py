@@ -4,8 +4,8 @@ from django.contrib import admin
 from django.urls import include, path
 
 urlpatterns = [
+    path('', include('SensorDirectory.url')),
     path('admin/', admin.site.urls),
-    path('SensorDirectory/', include('SensorDirectory.url')),
 
 ]
 
